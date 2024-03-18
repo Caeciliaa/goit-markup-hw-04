@@ -155,9 +155,17 @@ address {
 
 /* ===========HERO============ */
 
-.container .hero {
+.hero {
   max-width: 1440px;
   margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-wrap {
@@ -165,15 +173,6 @@ address {
   padding: 188px 0;
   border: 1px solid #000;
   background-color: #2e2f42;
-  background-image: url(../images/img_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/img_bg.jpg);
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -345,6 +344,12 @@ address {
 }
 .social-item {
 }
+
+.social-item:first-child .social-link {
+  margin-left: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social-link {
   width: 40px;
   height: 40px;
@@ -451,6 +456,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text:hover {
