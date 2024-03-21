@@ -486,7 +486,7 @@ address {
 }
 
 .logo {
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
   display: inline-block;
   margin: 0 76px 16px 0;
 }
